@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Author</title>
+    <link rel="stylesheet" type="text/css" href="/css/Authors/addAuthors.css">
+</head>
+<body>
+    <h1>Add a New Author</h1>
+    <form action="/api/authors/add" method="POST" enctype="multipart/form-data">
+        <label for="FullName">Full Name:</label>
+        <input type="text" id="FullName" name="FullName" required><br>
+
+        <label for="ShortName">Short Name:</label>
+        <input type="text" id="ShortName" name="ShortName" required><br>
+
+        <label for="Bio">Biography:</label>
+        <textarea id="Bio" name="Bio" rows="4"></textarea><br>
+
+        <label for="Photo">Upload Photo:</label>
+        <input type="file" id="Photo" name="Photo"><br>
+
+        <input type="submit" value="Add Author">
+    </form>
+</body>
+</html>

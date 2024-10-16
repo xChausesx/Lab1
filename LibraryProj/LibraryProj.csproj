@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\Keywords\addKeywords.css" />
+    <Content Remove="wwwroot\css\Keywords\allKeywords.css" />
+    <Content Remove="wwwroot\html\Keywords\allKeywords.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.Identity.MongoDbCore" Version="3.1.2" />
+    <PackageReference Include="MongoDB.Bson" Version="2.25.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.25.0" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.25.0" />
+    <PackageReference Include="MongoDB.Driver.GridFS" Version="2.25.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\Keywords\addKeywords.css" />
+    <None Include="wwwroot\css\Keywords\allKeywords.css" />
+    <None Include="wwwroot\html\Authors\allAuthors.html" />
+    <None Include="wwwroot\css\Authors\allAuthors.css" />
+    <None Include="wwwroot\html\Keywords\allKeywords.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\Books\" />
+    <Folder Include="wwwroot\html\Books\" />
+  </ItemGroup>
+
+</Project>

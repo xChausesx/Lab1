@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Keyword</title>
+    <link rel="stylesheet" type="text/css" href="/css/Keywords/addKeywords.css">
+</head>
+<body>
+    <h1>Add a New Keyword</h1>
+    <form action="/api/keywords/add" method="POST">
+        <label for="Word">Keyword:</label>
+        <input type="text" id="Word" name="Word" required><br>
+
+        <input type="submit" value="Add Keyword">
+    </form>
+</body>
+</html>

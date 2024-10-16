@@ -1,0 +1,52 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #333;
+    text-align: center; /* Вирівнюємо заголовок по центру */
+    margin-bottom: 30px; /* Відступ знизу для заголовка */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє елементам обтікати один одного */
+    justify-content: center; /* Вирівнює елементи по центру */
+}
+
+li {
+    margin: 15px; /* Відступ між картками */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Краще закруглення кутів */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Додає тінь */
+    transition: transform 0.2s; /* Анімація при наведенні */
+}
+
+    li:hover {
+        transform: translateY(-5px); /* Легке підняття картки при наведенні */
+    }
+
+h2 {
+    margin: 0;
+    color: #007bff;
+    font-size: 1.5em; /* Збільшено розмір шрифту */
+}
+
+p {
+    margin: 5px 0;
+    color: #555; /* Темніший колір тексту для контрасту */
+}
+
+img {
+    border-radius: 50%;
+    width: 100px; /* Задаємо фіксовану ширину */
+    height: 100px; /* Задаємо фіксовану висоту */
+    object-fit: cover; /* Підгонка зображення */
+    margin-bottom: 10px; /* Відступ знизу зображення */
+}
